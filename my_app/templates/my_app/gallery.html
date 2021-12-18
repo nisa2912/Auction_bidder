@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+<h1>Gallery </h1> 
+
+<div>
+    <div>
+        {% for post in posts %}
+        <div>
+            <h4> <a href ="{% url 'post' post.Product_description %}">{{post.Product_name}}</a>--{{post.Product_description}}--{{post.Min_Bid_Price}}--{{post.End_Time}}</h4>
+        </div>
+
+
+
+        {% endfor %}
+    </div>
+
+
+</div>
+
+
+{% endblock content %}

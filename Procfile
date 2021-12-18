@@ -1,0 +1,1 @@
+web gunicorn auction_bidder.wsgi:application --log-file -
